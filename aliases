@@ -1,0 +1,2 @@
+alias lsl="ls -lhkp"
+alias vg="valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=13"

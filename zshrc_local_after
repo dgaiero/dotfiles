@@ -1,0 +1,19 @@
+# Initialize completion
+autoload -U compinit && compinit
+
+# VIM as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# add this configuration to ~/.zshrc
+export HISTFILE=~/.zsh_history  # ensure history file visibility
+export HH_CONFIG=hicolor        # get more colors
+bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
+
+prompt_context(){}
+eval $(ssh-agent -s) > /dev/null
+source $HOME/.aliases
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+export LIBGL_ALWAYS_INDIRECT=1
+alias get_esp32='export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin'
+alias get_idf='export IDF_PATH=~/esp/pycom-esp-idf'

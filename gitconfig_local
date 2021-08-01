@@ -1,0 +1,7 @@
+[user]
+	name = Name
+	email = email
+    signingkey = key
+
+[github]
+	user = uname
