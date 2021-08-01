@@ -23,8 +23,6 @@
     ~/.zshrc_local_after: zshrc_local_after
     ~/.gitconfig: gitconfig
     ~/.gitconfig_local: gitconfig_local
-    ~/.gitmessage: gitmessage
-    ~/.gitignore_global: gitignore_global
     ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
 
